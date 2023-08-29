@@ -1,2 +1,2 @@
 # suryalogin
-just try to hoe to work github and vscode.
+just try how to work with github and vscode.
