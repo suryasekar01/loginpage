@@ -1,4 +1,4 @@
 # suryalogin
-just try to hoe to work github and vscode.!!!
+just try to how to create a index page.!!!
 
 
