@@ -261,3 +261,8 @@ ul li a:hover{
 .icons ion-icon:hover{
     color: #ff7200;
 }
+ @media (min-width: 601px) and (max-width: 1024px) {
+            .main {
+                font-size: 24px;
+            }
+    }
