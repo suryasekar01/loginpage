@@ -262,41 +262,90 @@ ul li a:hover{
 .icons ion-icon:hover{
     color: #ff7200;
 }
-@media (max-width: 768px) {
+/* Default styles (already applied in your code) */
+
+/* Tablet View (Portrait & Landscape) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .main {
+        font-size: 20px;
+        height: auto;
+    }
+
     .navbar {
+        width: 100%;
+        height: auto;
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .menu ul {
-        flex-direction: column;
-        gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 0;
     }
-    
-    .content h1 {
-        font-size: 36px;
+
+    .menu ul li {
+        margin: 10px;
     }
-    
-    .content span {
-        font-size: 45px;
-    }
-    
+
     .form {
         width: 80%;
+        left: 10%;
+    }
+
+    .content {
+        text-align: center;
     }
 }
 
-@media (max-width: 480px) {
+/* Mobile View */
+@media (max-width: 600px) {
+    .main {
+        height: auto;
+        text-align: center;
+        background-size: cover;
+    }
+
+    .navbar {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .menu ul li {
+        margin: 5px 0;
+    }
+
+    .content {
+        width: 90%;
+        margin: auto;
+    }
+
     .content h1 {
-        font-size: 28px;
+        font-size: 24px;
     }
-    
-    .content span {
-        font-size: 35px;
+
+    .content .par {
+        font-size: 14px;
     }
-    
+
     .form {
         width: 90%;
+        left: 5%;
     }
+
+    .btn, .btnn {
+        width: 100%;
+    }
+}
+
 }
 
