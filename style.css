@@ -262,20 +262,27 @@ ul li a:hover{
 .icons ion-icon:hover{
     color: #ff7200;
 }
-/* Default styles (already applied in your code) */
 
 /* Responsive for Tablets (Portrait & Landscape) */
 @media (min-width: 601px) and (max-width: 1024px) {
     .main {
         height: auto;
         text-align: center;
+        background-size: cover;
     }
 
     .navbar {
         width: 100%;
         height: auto;
+        display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 10px 0;
+    }
+
+    .menu {
+        width: 100%;
+        text-align: center;
     }
 
     .menu ul {
@@ -295,19 +302,28 @@ ul li a:hover{
         margin: auto;
     }
 
+    .content h1 {
+        font-size: 36px;
+    }
+
+    .content .par {
+        font-size: 16px;
+    }
+
     .form {
         width: 80%;
         margin: auto;
         left: 0;
         position: relative;
+        top: 0;
     }
 
-    .content h1 {
-        font-size: 32px;
+    .btn, .btnn {
+        width: 100%;
     }
 }
 
-/* Responsive for Mobile Devices */
+/* Responsive for Mobile Devices (Up to 600px) */
 @media (max-width: 600px) {
     .main {
         height: auto;
@@ -320,6 +336,12 @@ ul li a:hover{
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 10px 0;
+    }
+
+    .menu {
+        width: 100%;
+        text-align: center;
     }
 
     .menu ul {
@@ -340,7 +362,7 @@ ul li a:hover{
     }
 
     .content h1 {
-        font-size: 24px;
+        font-size: 28px;
     }
 
     .content .par {
@@ -352,6 +374,7 @@ ul li a:hover{
         margin: auto;
         position: relative;
         left: 0;
+        top: 0;
     }
 
     .btn, .btnn {
@@ -364,7 +387,7 @@ ul li a:hover{
     }
 }
 
-/* Desktop View (Large Screens) */
+/* Responsive for Large Screens (Desktops - Above 1025px) */
 @media (min-width: 1025px) {
     .main {
         height: 100vh;
@@ -391,6 +414,9 @@ ul li a:hover{
     .form {
         width: 300px;
         left: 70%;
+        top: 0;
     }
 }
+
+
 
