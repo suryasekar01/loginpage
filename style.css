@@ -262,81 +262,41 @@ ul li a:hover{
 .icons ion-icon:hover{
     color: #ff7200;
 }
- @media (min-width: 601px) and (max-width: 1024px) {
-            .main {
-                font-size: 24px;
-            }
-    }
-
-/* Mobile Devices */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .navbar {
-        width: 100%;
-        display: flex;
         flex-direction: column;
         align-items: center;
-        height: auto;
     }
-
+    
     .menu ul {
         flex-direction: column;
-        padding: 10px 0;
+        gap: 10px;
     }
-
-    .menu ul li {
-        margin: 10px 0;
-    }
-
-    .search {
-        width: 100%;
-        text-align: center;
-        margin-left: 0;
-    }
-
-    .srch {
-        width: 80%;
-    }
-
+    
     .content h1 {
         font-size: 36px;
-        text-align: center;
     }
-
+    
     .content span {
         font-size: 45px;
     }
-
+    
     .form {
         width: 80%;
-        left: 50%;
-        transform: translate(-50%, 0%);
     }
 }
 
-/* Tablets */
-@media (min-width: 601px) and (max-width: 1024px) {
-    .navbar {
-        width: 100%;
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 28px;
     }
-
-    .menu ul {
-        justify-content: space-around;
+    
+    .content span {
+        font-size: 35px;
     }
-
-    .search {
-        margin-left: auto;
-    }
-
-    .content {
+    
+    .form {
         width: 90%;
     }
-
-    .content h1 {
-        font-size: 42px;
-    }
-
-    .form {
-        left: 50%;
-        transform: translate(-50%, 0%);
-    }
 }
+
