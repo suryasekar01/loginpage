@@ -256,50 +256,5 @@ ul li a:hover{
 .icons ion-icon:hover{
     color: #ff7200;
 }
-@media (max-width: 768px) {
-    .navbar {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .menu ul {
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-    }
-
-    ul li {
-        margin: 10px 0;
-    }
-}
-@media (max-width: 768px) {
-    .content h1 {
-        font-size: 32px;
-        text-align: center;
-    }
-
-    .content .par {
-        font-size: 16px;
-        text-align: center;
-    }
-
-    .content .cn {
-        width: 100%;
-        text-align: center;
-    }
-}
-@media (max-width: 600px) {
-    .form {
-        width: 90%;
-        left: 5%;
-        transform: none;
-    }
-
-    .btnn, .btn {
-        width: 100%;
-    }
-}
 
 
