@@ -264,17 +264,16 @@ ul li a:hover{
 }
 /* Default styles (already applied in your code) */
 
-/* Tablet View (Portrait & Landscape) */
+/* Responsive for Tablets (Portrait & Landscape) */
 @media (min-width: 601px) and (max-width: 1024px) {
     .main {
-        font-size: 20px;
         height: auto;
+        text-align: center;
     }
 
     .navbar {
         width: 100%;
         height: auto;
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -290,17 +289,25 @@ ul li a:hover{
         margin: 10px;
     }
 
-    .form {
-        width: 80%;
-        left: 10%;
+    .content {
+        width: 90%;
+        text-align: center;
+        margin: auto;
     }
 
-    .content {
-        text-align: center;
+    .form {
+        width: 80%;
+        margin: auto;
+        left: 0;
+        position: relative;
+    }
+
+    .content h1 {
+        font-size: 32px;
     }
 }
 
-/* Mobile View */
+/* Responsive for Mobile Devices */
 @media (max-width: 600px) {
     .main {
         height: auto;
@@ -310,22 +317,25 @@ ul li a:hover{
 
     .navbar {
         width: 100%;
-        height: auto;
+        display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .menu ul {
         display: flex;
         flex-direction: column;
+        align-items: center;
         padding: 0;
     }
 
     .menu ul li {
-        margin: 5px 0;
+        margin: 10px 0;
     }
 
     .content {
         width: 90%;
+        text-align: center;
         margin: auto;
     }
 
@@ -339,13 +349,48 @@ ul li a:hover{
 
     .form {
         width: 90%;
-        left: 5%;
+        margin: auto;
+        position: relative;
+        left: 0;
     }
 
     .btn, .btnn {
         width: 100%;
     }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
+/* Desktop View (Large Screens) */
+@media (min-width: 1025px) {
+    .main {
+        height: 100vh;
+    }
+
+    .navbar {
+        width: 1200px;
+    }
+
+    .menu ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu ul li {
+        margin-left: 50px;
+    }
+
+    .content {
+        width: 80%;
+        text-align: left;
+    }
+
+    .form {
+        width: 300px;
+        left: 70%;
+    }
 }
 
