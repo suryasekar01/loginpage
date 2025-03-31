@@ -119,14 +119,20 @@ ul li a:hover{
     position: relative;
 }
 
-.content h1 {
-    font-size: clamp(24px, 5vw, 50px); /* Auto-scaling */
-    text-align: center;
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
 }
 
-.content .par {
-    font-size: clamp(12px, 2vw, 18px); /* Adjust for mobile */
-    text-align: center;
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
 }
 
 .content .cn{
@@ -256,5 +262,3 @@ ul li a:hover{
 .icons ion-icon:hover{
     color: #ff7200;
 }
-
-
